@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monitor-disponibilidade-sites"
+version = "1.0.0"
+description = "Monitor de disponibilidade de URLs com histórico SQLite e alertas opcionais"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Monitor de Disponibilidade" }]
+dependencies = []
+
+[project.scripts]
+monitor-disponibilidade = "monitor_disponibilidade.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["monitor_disponibilidade*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

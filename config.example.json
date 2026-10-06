@@ -1,0 +1,23 @@
+{
+  "urls": [
+    {"name": "site principal", "url": "https://example.com/health"}
+  ],
+  "timeout": 5,
+  "retries": 2,
+  "database": "monitor.db",
+  "notifications": {
+    "email": {
+      "enabled": false,
+      "host": "smtp.example.com",
+      "port": 587,
+      "sender": "monitor@example.com",
+      "recipients": ["oncall@example.com"],
+      "starttls": true
+    },
+    "telegram": {
+      "enabled": false,
+      "bot_token": "",
+      "chat_id": ""
+    }
+  }
+}
