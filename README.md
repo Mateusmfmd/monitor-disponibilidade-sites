@@ -1,4 +1,5 @@
 # Monitor de disponibilidade de sites
+[![CI](https://github.com/Mateusmfmd/monitor-disponibilidade-sites/actions/workflows/ci.yml/badge.svg)](https://github.com/Mateusmfmd/monitor-disponibilidade-sites/actions/workflows/ci.yml)
 
 Monitor Python pequeno e autocontido para verificar URLs, guardar o histórico em SQLite e emitir alertas opcionais por e-mail ou Telegram.
 
